@@ -20,9 +20,10 @@ Install in separate virtual environment.
 ```bash
 sudo mkdir -p /opt/nautobot-app-cli
 sudo chown nautobo:nautobot /opt/nautobot-app-cli
+sudo -iu nautobot
 git clone <your-repo> /opt/nautobot-app-cli
 cd /opt/nautobot-app-cli
-python3 -m venv venv
+python3.13 -m venv venv
 source venv/bin/activate
 pip install .
 ```

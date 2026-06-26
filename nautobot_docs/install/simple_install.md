@@ -40,7 +40,37 @@ nautobot-server migrate
 nautobot-server createsuperuser
 nautobot-server collectstatic --noinput
 hostname -I
+
+## Run Nautobot web 
+
+```bash
 nautobot-server runserver 0.0.0.0:8000
+```
+
+
+## Celery Worker Process
+### Purpose
+- Jobs
+- Background Tasks
+- Long-running Tasks
+
+```bash
+nautobot-server celery worker
+```
+
+
+
+## Celery beat (Scheduler)
+
+### Purpose
+- Scheduled Jobs
+- Periodic Tasks
+
+```bash
+nautobot-server celery beat
+
+```
+
 
 
 
