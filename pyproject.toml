@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "nautobot-app-cli"
+version = "0.1.0"
+description = "Simple Nautobot App Manager"
+authors = ["Amit Gupta"]
+
+packages = [
+{ include = "nautobot_app" }
+]
+
+include = [
+"nautobot_app/index.json"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+click = "^8.1"
+
+[tool.poetry.scripts]
+nautobot-app = "nautobot_app.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"

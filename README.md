@@ -18,6 +18,8 @@ Simple CLI to install, upgrade, uninstall, and manage Nautobot apps.
 Install in separate virtual environment.
 
 ```bash
+sudo mkdir -p /opt/nautobot-app-cli
+sudo chown nautobo:nautobot /opt/nautobot-app-cli
 git clone <your-repo> /opt/nautobot-app-cli
 cd /opt/nautobot-app-cli
 python3 -m venv venv
