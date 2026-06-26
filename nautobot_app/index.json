@@ -1,0 +1,10 @@
+{
+  "apps": {
+    "vlan-request": {
+      "repo": "https://github.com/amitgupta369/nautobot-vlan-request.git",
+      "package": "nautobot-vlan-request",
+      "plugin_name": "nautobot_vlan_request",
+      "default_version": "v0.1.0"
+    }
+  }
+}
