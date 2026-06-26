@@ -155,3 +155,36 @@ Recommended for cloud-native production.
 | Testing / UAT   | Docker Compose                      |
 | Production      | systemd + gunicorn + celery + nginx |
 | Enterprise / HA | Helm Chart on Kubernetes            |
+
+
+This document explains supported operating systems, and recommended technology stack versions.
+
+---
+
+## Supported Operating Systems
+
+| Operating System | Version   | Status    | Remarks                                |
+| ---------------- | --------- | --------- | -------------------------------------- |
+| Ubuntu           | 22.04 LTS | Supported | ⚠ Nearing EOL, plan upgrade            |
+| Ubuntu           | 24.04 LTS | Supported | Recommended for new deployments        |
+| RHEL             | 8.x       | Supported | Stable enterprise deployment           |
+| RHEL             | 9.x       | Supported | Recommended for enterprise deployments |
+| Amazon Linux     | 2023      | Supported | Recommended for AWS deployments        |
+
+---
+
+## Recommended Technology Stack
+
+| Component      | Recommended Version | Remarks                    |
+| -------------- |---------------------| -------------------------- |
+| Python         | 3.13.x              | Recommended and stable     |
+| Nautobot       | 3.1.x               | Current stable release     |
+| PostgreSQL     | 18.x                | Recommended                |
+| Redis          | 8.x                 | Recommended                |
+| Gunicorn       | Latest stable       | Production web server      |
+| Celery         | Latest stable       | Async job execution        |
+| Nginx          | Latest stable       | Reverse proxy              |
+| Docker         | 27+                 | Container deployments      |
+| Docker Compose | v2                  | Container orchestration    |
+| Kubernetes     | 1.30+               | Enterprise deployments     |
+| Helm           | 3.x                 | Kubernetes package manager |
