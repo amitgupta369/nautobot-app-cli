@@ -22,6 +22,10 @@ sudo apt install git curl wget  libxml2-dev libxslt1-dev libffi-dev  libssl-dev 
 sudo apt install redis-server  software-properties-common
 
 sudo -u postgres psql
+create database nautobot
+alter database nautobot owner to nautobot;
+grant all privileges on database nautobot to nautobot;
+
 sudo useradd --system --create-home --shell /bin/bash nautobot
 sudo mkdir -p /opt/nautobot
 sudo chown nautobot:nautobot /opt/nautobot
